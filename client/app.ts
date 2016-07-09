@@ -11,16 +11,17 @@ import { Component,
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import {CORE_DIRECTIVES, APP_BASE_HREF} from '@angular/common';
 import {DROPDOWN_DIRECTIVES} from 'ng2-bootstrap';
-import {StarsBackground} from './imports/stars/stars';
 import { APP_ROUTER_PROVIDERS } from './imports/app.routes';
+import { PageHeader } from './includes/header/header';
+import { PageFooter } from './includes/footer/footer';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
   selector: 'app',
   templateUrl: '/client/app.html',
-  directives: [ROUTER_DIRECTIVES, DROPDOWN_DIRECTIVES, CORE_DIRECTIVES, StarsBackground]
+  directives: [ROUTER_DIRECTIVES, DROPDOWN_DIRECTIVES, CORE_DIRECTIVES, PageHeader, PageFooter]
 })
-class App { 
+class App {
   public disabled:boolean = false;
   public status:{isopen:boolean} = {isopen: false};
   public items:Array<string> = ['The first choice!',

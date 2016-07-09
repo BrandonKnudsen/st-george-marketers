@@ -12,12 +12,12 @@ import {
 import { MeteorComponent } from 'angular2-meteor';
 
 @Component({
-  selector: 'home',
+  selector: 'pageFooter',
   template: `
-  
+<br>Bottom of App
   `,
   directives: []
 })
-export class HomeComponent extends MeteorComponent  {
+export class PageFooter extends MeteorComponent  {
 
 }
