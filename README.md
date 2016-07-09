@@ -1,2 +1,2 @@
-# st-george-marketers
+# St George Marketers
 St George Marketers Website
